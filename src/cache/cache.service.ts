@@ -9,10 +9,10 @@ export class CacheService {
       ) {}
 
       async getCache<T>(key: string, functionRequest: () => Promise <T>): Promise<T>{
-        const citeCache: T = await this.cacheCity.get(key);
+        const cityCache: T = await this.cacheCity.get(key);
 
-        if(citeCache){
-            return citeCache
+        if(cityCache){
+            return cityCache
         }
 
         const cites = await functionRequest();

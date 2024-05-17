@@ -1,9 +1,7 @@
-import { Inject, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { CityEntity } from './entities/city.entity';
 import { Repository } from 'typeorm';
-import { CACHE_MANAGER } from '@nestjs/cache-manager';
-import { Cache } from 'cache-manager';
 import { CacheService } from 'src/cache/cache.service';
 
 @Injectable()
